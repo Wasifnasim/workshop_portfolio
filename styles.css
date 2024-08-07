@@ -1,0 +1,214 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4; /* Change to your desired color */
+}
+
+.intro {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional styles for other sections */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f4f4f4;
+  background-color: #121212;
+}
+
+header {
+  background: linear-gradient(to right, #333, #444);
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff7e5f;
+}
+
+.section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1e1e1e;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  flex: 1 1 calc(33% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background-color: #feb47b;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff7e5f;
+}
+.hero-image {
+  width: 10%;
+  max-width: 800px; /* Adjust max-width as needed */
+  height: auto;
+  border-radius: 10px; /* Optional: for rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: for shadow effect */
+  margin-top: 1rem; /* Optional: space above the image */
+}
+.about-list {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  text-align: left; /* Align text to the left */
+  max-width: 600px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the list */
+}
+
+.about-list li {
+  margin: 0.5rem 0; /* Space between items */
+  font-family: 'Courier New', Courier, monospace; /* Change to your desired font */
+  font-size: 1.1rem; /* Increase font size */
+  line-height: 1.6; /* Improve line height for readability */
+}
+
+.about-list li strong {
+  color: #ff7e5f; /* Change color for strong text */
+}
+.intro {
+  background: linear-gradient(to right, #FF7E5F, #FEB47B); /* Gradient background */
+  padding: 2rem; /* Add padding for better spacing */
+  border-radius: 10px; /* Optional: rounded corners */
+  color: white; /* Change text color for better contrast */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
